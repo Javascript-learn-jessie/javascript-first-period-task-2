@@ -1,0 +1,50 @@
+### 1.计算订单初始价格
+```
+ 输入：
+    items:[String]
+    itemInfo:[{
+        id:String,
+        name:String,
+        price:Number
+    }]:loadAllItems()
+ 输出：
+    single_summary:String
+    selectedItemInfo:[{
+        id:String,
+        name:String,
+        price:Number
+    }]
+    total_summary:Number
+```
+### 2.计算优惠后的价格
+```
+ 输入：
+    items:[String]
+    itemInfo:[{
+        id:String,
+        name:String,
+        price:String
+    }]:loadAllItems()    
+    total_summary:String
+    promotionInfo:[{
+        type:String,
+        items:[String]
+    }]:loadPromotions()
+ 输出：
+    promotion_type:String
+    promotion_items_name:[String]
+    discount_price:String
+    total_summary:Number
+```
+### 3.打印单据
+```
+ 输入:
+    items:[String]
+    promotion_type:String
+    promotion_items_name:[String]
+    discount_price:String
+    single_summary:String
+    total_summary:Number
+ 输出:
+    result:String
+```
