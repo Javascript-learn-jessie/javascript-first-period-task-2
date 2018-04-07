@@ -80,7 +80,6 @@ function printOrder(singleSummary,totalSummary,promotionType,promotionPrice,prom
   
     result+="总计："+totalSummary+"元\n";
     result += "===================================\n";
-    console.log(result);
     return result;    
 }
 function bestCharge(selectedItems) {
