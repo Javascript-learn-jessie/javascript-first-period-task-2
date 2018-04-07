@@ -66,20 +66,20 @@ function getPromotionOrderPrice(selectedItemInfo,totalSummary,promotionInfo){
 }
 function printOrder(singleSummary,totalSummary,promotionType,promotionPrice,promotionFlag){
     var result="";
-    result += "============= 订餐明细 ============= \n";
+    result += "============= 订餐明细 =============\n";
     for (let singleSum of singleSummary) {
       result += singleSum;
-      result += " \n";
+      result += "\n";
     }
-    result += "----------------------------------- \n";
+    result += "-----------------------------------\n";
     if (promotionFlag) {
-      result += "使用优惠: \n";
-      result += promotionType + "，省" + promotionPrice + "元 \n";
-      result += "----------------------------------- \n";
+      result += "使用优惠:\n";
+      result += promotionType + "，省" + promotionPrice + "元\n";
+      result += "-----------------------------------\n";
     }
   
-    result+="总计："+totalSummary+"元 \n";
-    result += "=================================== \n";
+    result+="总计："+totalSummary+"元\n";
+    result += "===================================\n";
     console.log(result);
     return result;    
 }
